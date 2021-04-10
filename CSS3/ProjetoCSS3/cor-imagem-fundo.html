@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cor e imagem de fundo</title>
+	<meta charset="utf-8">
+
+	<style type="text/css">
+		
+		body {
+			background-image: url('imagens/yoshi.png');
+			/*repeat / no-repeat / repeat-x / repeat-y*/
+			background-repeat: no-repeat;
+			/*não rola / rola com a tela - fixed / scroll*/
+			background-attachment: fixed; 
+			/*left right center , top center bottom*/
+			background-position: center center;
+		}
+
+		.fundo {
+			background: blue url('imagens/yoshi.png') no-repeat fixed center top;
+		}
+
+	</style>
+</head>
+<body class="fundo">
+
+	<h1>Conteúdo de título 1</h1>
+
+</body>
+</html>
