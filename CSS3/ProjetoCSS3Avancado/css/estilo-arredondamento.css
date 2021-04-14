@@ -1,0 +1,49 @@
+
+/*Fundo simples*/
+/*.caixa {
+	width: 400px;
+	background: #dedede url('../imagens/topo.png') no-repeat left top;
+
+}
+
+.caixa h2 {
+	padding: 10px 20px 0 20px; 
+}
+
+.caixa p {
+	background: url('../imagens/baixo.png') no-repeat left bottom;
+	padding: 0 20px 20px 20px; 
+}
+*/
+
+/*Fundo complexo*/
+
+* {
+	margin: 0;
+
+}
+
+
+.caixa {
+	border: 1px solid red;
+	width: 400px;
+	background: url('../imagens/fundo-arredondamento.png');
+	background-repeat: repeat-y; 
+	
+}
+
+.caixa h2 {
+	
+	padding: 10px 20px 0 20px;
+	background: #dedede url('../imagens/topo2.png') no-repeat left top;
+}
+
+.caixa p {
+	
+	padding: 0 20px;
+}
+
+.caixa .ultimo {
+	background: #dedede url('../imagens/baixo2.png') no-repeat left bottom;
+	padding-bottom: 20px;
+}

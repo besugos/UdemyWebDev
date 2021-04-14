@@ -1,0 +1,42 @@
+body {
+	color: red;
+	border: 1px solid blue;
+}
+
+/*Seletores iguais, a precedencia é de quem vem depois*/
+
+/*!important sobrescreve os demais*/
+/*p {
+	color: red !important;
+}*/
+
+/*Seletor mais específico tem precedência*/
+
+/*Seleciona qualquer p dentro da classe*/
+.pagina p {
+	color: green;
+}
+
+/*Seleciona apenas quando a classe é definida no item*/
+p.pagina {
+	color: blue;
+}
+
+p {
+	color: blue;
+}
+
+/*id tem precedência sobre a classe*/
+h2#amarelo {
+	color: yellow;
+}
+
+h2.verde {
+	color: green;
+}
+
+/*id > class > geral*/
+h2 {
+	color: blue;
+}
+

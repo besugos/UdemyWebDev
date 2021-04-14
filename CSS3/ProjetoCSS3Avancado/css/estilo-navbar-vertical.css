@@ -1,0 +1,35 @@
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul a {
+	width: 200px;
+	height: 40px;
+	display: block;
+	color: #000;
+	text-decoration: none;
+	text-indent: 40px;
+	line-height: 40px;
+	background: #f7b600 url('../imagens/menu.png') no-repeat left;
+}
+
+/*Colocar a classe "selecionado" no link correto (no <li>) */
+ul a:hover, .selecionado a {
+	color: #fff;
+	background-position: right;
+	background-color: #f99200;
+}
+
+/*Outra abordagem - aqui o css automaticamente verifica qual o certo*/
+
+#home #navegacao .home a,
+#sobre #navegacao .sobre a,
+#servicos #navegacao .servicos a, {
+	color: #fff;
+	background-position: right;
+	background-color: #f99200;
+}
+
