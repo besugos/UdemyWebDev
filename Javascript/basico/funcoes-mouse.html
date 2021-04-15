@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eventos Mouse</title>
+	<meta charset="utf-8">
+	<script>
+
+		function clique() {
+			alert('clicou!')
+		}
+
+		function sobre() {
+			document.getElementById("area").style.background = "#0f0"
+		}
+
+		function saiu() {
+			document.getElementById("area").style.background = "#ccc"
+		}
+
+	</script>
+</head>
+<body>
+
+	<div id="area" onclick="clique()" onmouseover="sobre()" onmouseout="saiu()" style="background: #ccc; height: 150px; width: 150px"></div>
+
+</body>
+</html>

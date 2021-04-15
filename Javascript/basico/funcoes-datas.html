@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Datas</title>
+	<meta charset="utf-8">
+	<script>
+		
+		var data = new Date()
+
+		//diferença entre datas
+
+		var data1 = new Date(2021, 3, 13)
+		var data2 = new Date(2019, 2, 22)
+
+		var diffMilli = Math.abs(data1.getTime() - data2.getTime())
+
+		var dayInMilli = 24*60*60*1000
+
+		var diffInDays = diffMilli / dayInMilli
+
+		document.write(Math.ceil(diffInDays))
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

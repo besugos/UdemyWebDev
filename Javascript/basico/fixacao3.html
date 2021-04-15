@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fixação 3</title>
+	<meta charset="utf-8">
+	
+</head>
+<body>
+
+	<script>
+		
+		var num1 = prompt('Informe o primeiro numero: ')
+		var num2 = prompt('Informe o segundo numero: ')
+		var oper = prompt('Informe a operação desejada:')
+
+		document.write('O resultado é: ' + calcula(num1, num2, oper))
+
+		function calcula(num1, num2, oper) {
+			if (oper == 'soma') {
+				return parseInt(num1) + parseInt(num2)
+			} else if (oper == 'subtracao') {
+				return parseInt(num1) - parseInt(num2)
+			} else {
+				return 'operação inválida'
+			}
+
+			
+		}
+
+	</script>
+
+</body>
+</html>

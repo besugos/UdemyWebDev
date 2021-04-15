@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Manipulando o DOM</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+	<input id="campo" type="text" name="campo" onkeyup="decide()">
+	<hr>
+	<span>Letras: </span>
+	<input id="letras" type="text" name="letras" disabled="disabled">
+	<span>Numeros: </span>
+	<input id="numeros" type="text" name="numeros" disabled="disabled">
+
+
+<script>
+
+	function decide() {
+		var campo = document.getElementById("campo").value
+		var lastChar = campo[(campo.length - 1)]
+
+		switch (lastChar) {
+
+			case '0':
+			case '1':
+			case '2':
+			case '3':
+			case '4':
+			case '5':
+			case '6':
+			case '7':
+			case '8':
+			case '9':
+				document.getElementById("numeros").value += lastChar
+				break
+			default:
+				document.getElementById("letras").value += lastChar
+				break
+		}
+	}
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!-- Se a idade informada for maior ou igual a 0 e menor que 15, exibir a mensagem “Criança”.
+Se a idade informada for maior ou igual a 15 e menor que 30, exibir a mensagem “Jovem”.
+Se a idade informada for maior ou igual a 30 e menor que 60, exibir a mensagem “Adulto”.
+Se a idade informada for maior ou igual a 60, exibir a mensagem “Idoso”. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fixação 1</title>
+	<meta charset="utf-8">
+	<script>
+		
+		var resultado
+		var idade = prompt('Informe sua idade:')
+
+		if (idade >=0 && idade < 15) {
+			resultado = 'Criança'
+		} else if (idade < 30) {
+			resultado = 'Jovem'
+		} else if (idade < 60) {
+			resultado = 'Adulto'
+		} else {
+			resultado = 'Idoso'
+		}
+
+		if (idade < 0 || idade != parseInt(idade)) {
+			resultado = 'Idade inválida'
+		}
+
+		document.write('<h2>' + resultado + '</h2>')
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fixação 4 - DOM</title>
+	<meta charset="utf-8">
+
+</head>
+<body>
+
+	<input id="campo" onfocus="foco()" onblur="saiu()" type="text" name="campo">
+
+
+<script>
+
+		function foco() {
+			document.getElementById("campo").style.backgroundColor = "yellow"
+		}
+
+		function saiu() {
+			
+			var qtd = document.getElementById("campo").value.length
+
+			if (qtd < 3) {
+				document.getElementById("campo").style.backgroundColor = "red"
+			} else {
+				document.getElementById("campo").style.backgroundColor = "green"
+			}
+			
+		}
+
+	</script>
+</body>
+</html>
